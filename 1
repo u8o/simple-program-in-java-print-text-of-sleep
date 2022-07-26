@@ -1,0 +1,19 @@
+class Test {
+     public static void main(String s[]) throws Exception {
+
+               Thread x = new Thread ("Hello");
+               Thread y = new Thread ("Java");
+
+                x.start();
+                x.join();
+                y.start();
+
+                 String x1 = x.getName();
+                 System.out.println(x1);
+
+                 String y1 = y.getName();
+                 System.out.println(y1);
+
+                 System.out.println("I am Main thread");
+     }
+}      
